@@ -29,8 +29,7 @@ Utilizados na placa que vai enviar os dados para a placa <i>receiver</i>.
 
 # Diagrama da comunicação LoRa dentro do projeto
 > **Nota:** Arquivos **HDC1080_bmp388_receiver** e **HDC1080_bmp388_sender**.
-```mermaid
-sequenceDiagram
+```sequence
 Sender -) Receiver: Afere os dados e envia
 Note right of Receiver: Para funcionar corretamente o envio é <br>necessário que seja configurado o endpoint<br> com o arquivo "index.php"<br>(HDC1080_bmp388_receiver/Site/Index.php)
 Receiver -) Banco de dados: Envia os dados e salva
